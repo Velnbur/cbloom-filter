@@ -55,8 +55,6 @@ This command will build the test executable and run the tests. The test results 
 
 ## Usage
 
-Currently, the `bloomfilter` executable does not have any functionality implemented in the `main` function. You can extend the `main` function to use the Bloom filter as needed.
-
 Here is a simple example of how to use the Bloom filter:
 
 ```c
@@ -88,6 +86,13 @@ int main() {
     bloom_filter_free(&bf);
     return 0;
 }
+```
+
+or compile and use testing version like this:
+
+```sh
+./bin/bloomfilter arg1 arg2 arg3 arg1
+'arg1' is probably in the set.
 ```
 
 ## License
